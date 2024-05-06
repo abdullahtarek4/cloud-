@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: db-1
+    environment:
+      MYSQL_DATABASE: Cloud
+      MYSQL_USER: php_docker
+      MYSQL_PASSWORD: password
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+
+  web:
+    image: www-1
+    ports:
+      - "80:80"
+    depends_on:
+      - db

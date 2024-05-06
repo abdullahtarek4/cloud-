@@ -1,0 +1,133 @@
+/* Reset default margin and padding */
+body, h1, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(college.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Heading styles */
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+/* Table header styles */
+thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #fff;
+}
+
+/* Table data styles */
+tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* Highlight table rows on hover */
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Animation for table rows */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+tbody tr {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Highlighted row styles */
+.highlight {
+    background-color: #ffc107;
+}
+
+/* Additional styles for search student table */
+.search-table {
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+.search-table th,
+.search-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.search-table th {
+    background-color: #6c757d;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.search-table tr:hover {
+    background-color: #adb5bd;
+}
+
+.search-table .highlight {
+    background-color: #ffc107;
+}
+
+/* Button styles */
+.deleteBtn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.updateBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Highlighted row when clicked */
+.selected-row {
+    background-color: #ffc107 !important;
+}
